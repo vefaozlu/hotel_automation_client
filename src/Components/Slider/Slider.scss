@@ -1,0 +1,158 @@
+.Slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    .search-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+        position: absolute;
+        padding: 2rem;
+        box-sizing: border-box;
+        height: 20%;
+        width: 70%;
+        background-color: rgba(255, 255, 255, 0.4);
+        background-blend-mode: normal, multiply;
+        border: 1px solid rgba(255, 255, 255, 0.54);
+        backdrop-filter: blur(8px);
+        border-radius: 10px;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+
+        .date-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 10px;
+            height: 65px;
+            width: 30%;
+            border-right: 1px solid rgba(255, 255, 255, 0.54);
+            color: #030303;
+            box-sizing: border-box;
+
+            .date {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: space-between;
+                width: 50%;
+                height: 65px;
+                box-sizing: border-box;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                z-index: 0;
+
+                input {
+                    background-color: transparent;
+                    color: #000;
+                    border: none;
+                    width: 90%;
+                    height: 80%;
+                    text-align: center;
+                    font-weight: 500;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                p {
+                    text-align: start;
+                    height: 20%;
+                    width: 100%;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            .divider {
+                height: 80%;
+                width: 1px;
+                background-color: #b5b5b5;
+            }
+        }
+
+        .guest_count-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            background-color: #fff;
+            border-radius: 10px;
+            height: 65px;
+            width: 20%;
+            border-right: 1px solid rgba(255, 255, 255, 0.54);
+            color: #030303;
+            box-sizing: border-box;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            color: #030303;
+
+            .count-button {
+                position: relative;
+                background-color: #007aff;
+                color: #fff;
+                width: 30px;
+                height: 30px;
+                border-radius: 10px;
+                font-weight: 500;
+                margin: 1px;
+                transition: 0.2s ease-in-out;
+
+                p {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            .count-button:hover {
+                background-color: #3789FD;
+                transition: 0.3s ease-in-out;
+            }
+        }
+
+        .search-button {
+            padding: 4px;
+            box-sizing: border-box;
+            background-color: #007aff;
+            border: none;
+            width: 70px;
+            height: 70px;
+            color: #fff;
+            border-radius: 12px;
+            transition: 0.2s ease-in-out;
+            cursor: pointer;
+        }
+
+        .search-button:hover {
+            background-color: #3789FD;
+            transition: 0.3s ease-in-out;
+        }
+    }
+}
